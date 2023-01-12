@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC: Talita Dovigo </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- INICIO DO HTML PADRAO -->
+<body>
+  <main>
+    <h2>Cálculadora de IMC</h2>
+    <div class="divAltura">
+      <label for="altura">Digite sua altura:</label>
+      <input type="numero" id="altura" placeholder="Exemplo: 1,75">
+    </div>
+    <div class="divPeso">
+      <label for="peso">Digite seu peso:</label>
+      <input type="number" id="peso" placeholder="Exemplo: 65" />
+    </div>
+
+    <div class="divCalc">
+      <button onclick="calcIMC()">Calcular</button>
+      <button onclick="apagar()">Limpar</button>
+    </div>
+    <div id="resultado"></div>
+    
+  </main>
+
+
+<!-- IMPORTANDO SCRIPT.JS + BIBLIOTECAS PARA USAR MASCARA -->
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+<!-- SCRIPT QUE COLOCA MASCARA, TRANSFORMANDO O ID 'ALTURA' EM STRING -->
+  <script type="text/javascript">
+    $("#altura").mask("0,00")
+  </script>
+
+</body>
+<!-- FIM DO HTML PADRAO -->
+</html>

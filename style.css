@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #7d80c7;
+  color:#585bb0;
+  font-size: 20px;
+  padding: 120px;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #bed1fc;
+  border-radius: 20px;
+}
+
+.divAltura,
+.divPeso {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divCalc {
+  height: 40px;
+  padding: auto;
+  display: flex;
+  padding: 0 50px;
+  flex-direction: row;
+  gap: 30px;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  background-color: #f1f8ff;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #7d80c7;
+  color: #fff;
+  width: 210px;
+  height: 50px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #3f428d;
+  color: white;
+}
+
+@media (max-width: 500px) {
+
+  body,
+  input,
+  button {
+    font-size: 15px;
+  }
+}
+
+#resultado {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  color: #f1f8ff;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+}
